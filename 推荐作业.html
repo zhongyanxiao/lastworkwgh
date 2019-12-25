@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>work</title>
+      <meta charset="utf-8">
+  </head>
+  <style type="text/css">
+  	*{
+  		margin:0px;
+  		padding:0px;
+  	}
+  	a{
+  		text-decoration:none;
+  	}
+  	ul,li{
+        list-style:none;
+  	}
+  	body{
+  		background-image:linear-gradient(to bottom,#ffe4c4 0%,#ff7f50 100%);
+  	}
+  	.newDiv {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        text-align: center;
+        animation: myFirst 0.8s;   /* 淡入 */
+        animation: mySecond 0.8s;  /* 淡出 */
+     }
+  	#name1{
+    	height:845px;
+    	display:block;
+    }
+    #header{
+    	display:none;
+    	width: 100%
+		height: 50px;
+		background-color:#FFEBCD; 
+    }
+    #ad{
+    	position:fixed;
+    	right:50px;
+    	top:700px;
+    	background-color:pink;
+    }
+    .head{
+		width: 1200px;
+		height: 50px;
+		 margin: auto;
+	}
+	.search-left li{
+		list-style-type: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		float: left;
+		text-align: center;
+		color: white;
+		line-height: 50px;
+	}
+	.search-left img{
+		width: 70px;
+		height: 50px;
+
+	}
+	.search form{
+		position: absolute;
+		left: 800px;
+		top: 10px;
+		width: 220px;
+		height: 20px;
+	}
+	.search input{
+		width: 200px;
+		height: 20px;
+	}
+	.search img{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 3px;
+	}
+	.serch button{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 3px;
+	}
+	.search-right li{
+		list-style-type: inline-block;
+		width: 50px;
+		height: 50px;
+		float: right;
+		text-align: center;
+		color: white;
+		line-height: 50px;
+	}
+	.search-right img{
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 11px;
+	}
+    #act1{
+    	width:210px;
+		height:20px;
+		position:absolute;
+		top:20px;
+		left:100px;
+	}
+	#act1 p{
+		display:inline-block;
+		font-size:28px;
+		color:#ff1493;
+		font-style:italic;
+		font-family:"楷体";
+	}
+	#act{
+    	width:210px;
+		height:20px;
+		position:absolute;
+		top:20px;
+		left:1200px;
+	}
+	#act p{
+		display:inline-block;
+		font-size:17px;
+		color:black;
+		font-style:italic;
+	}
+	#act2{
+    	width:210px;
+		height:20px;
+		position:absolute;
+		top:20px;
+		left:120px;
+	}
+	#act2 p{
+		display:inline-block;
+		font-size:28px;
+		color:black;
+		font-style:italic;
+	}
+	#act9{
+    	width:210px;
+		height:20px;
+		position:absolute;
+		top:20px;
+		left:1200px;
+	}
+	#act9 p{
+		display:inline-block;
+		font-size:28px;
+		color:#a52a2a;
+		font-style:italic;
+		font-family:"楷体";
+	}
+    #nav{
+    	display:none;
+    	width:800px;
+    	height:150px;
+    	margin-left:350px;
+    	/*background-color:rgb(153,223,23);*/
+    	background-color:#ffe4c4;
+    }
+    #nav h2{
+       text-align:center;
+    }
+    #nav p{
+    	padding-top:15px;
+    	font-size:14px;
+    	color:black;
+    	text-indent:2em;
+    }
+    #nav a{
+    	width:150px;
+    	padding-left:600px;
+    }
+    #jieshao{
+    	display:none;
+    	height:1700px;
+    	float:left;
+    	margin-left:350px;
+    	/*background-color:rgb(195,223,242);*/
+    	width:800px;
+    }
+    #jieshao h2{
+    	margin-left:10px;
+    }
+    #jieshao>ul>li{
+    	margin-left:10px;
+    }
+    #p1{
+    	position:relative;
+        top:-230px;
+    	padding-left:15px;
+    	color:black;
+    	font-size:14px;
+    	display:inline-block;
+    }
+    #p2{
+    	position:relative;
+    	top:-210px;
+    	left:-45px;
+    	color:gray;
+    	font-size:12px;
+    	display:inline-block;
+    }
+     #p3{
+    	position:relative;
+        top:-230px;
+    	padding-left:15px;
+    	color:black;
+    	font-size:14px;
+    	display:inline-block;
+    }
+    #p4{
+    	position:relative;
+    	top:-210px;
+    	left:-33px;
+    	color:gray;
+    	font-size:12px;
+    	display:inline-block;
+    }
+    #p5{
+    	position:relative;
+    	top:-210px;
+    	left:-33px;
+    	color:gray;
+    	font-size:12px;
+    	display:inline-block;
+    }
+    #p6{
+    	position:relative;
+    	top:-210px;
+    	left:-57px;
+    	color:gray;
+    	font-size:12px;
+    	display:inline-block;
+    }
+    li{
+    	height:280px;
+    }
+    li>p{
+    	position:relative;
+        top:-200px;
+    	left:200px;
+    	width:400px;
+    }
+    #juzhao{
+    	display:none;
+    	width:1200px;
+    	height:800px;
+    	overflow:hidden;
+    	position:relative;
+    	margin-left:150px;
+	}
+	#pp{
+		height:40px;
+		font-style:italic;
+		display:inline-block;
+	}
+	.slider{
+		width:8400px;
+		position: absolute;
+		left:-1200px;
+	}
+	.slide{
+		width:1200px;
+		overflow:hidden;
+		float:left;
+	}
+	#juzhao>span{
+		display:block;
+		width:30px;
+		height:50px;
+		text-align:center;
+		cursor: pointer;
+		background-color:rgb(21,99,199,1);
+		font-size:30px;
+		position:absolute;
+		top:300px;
+		opacity:0;
+		color:white;
+	}
+	#left{
+		left:30px;
+	}
+	#right{
+		right:30px;
+	}
+	.nav1{
+		position:absolute;
+		left:500px;
+		bottom:20px;
+	}
+	.nav1>li{
+		float:left;
+		width:20px;
+		height:20px;
+		background: #ccc;
+		cursor:pointer;
+		margin:0 10px;
+		border-radius:50%;
+		list-style:none;
+		text-align:center;
+	}
+	.nav1 .active{
+		background:pink;
+	}
+	#button1{
+		display:none;
+		position: fixed;
+		right:0px;
+		top:50px;
+		color:blue;
+	}
+    #bottom{
+    	display:none;
+		height: 100px;
+		margin: 0 auto;
+		background-color: rgb(100,100,100);
+	}
+	#bottom p{
+	 	text-align: center;
+	 	padding-top: 23px;
+	 	color: white;
+	 	font-size: 14px;
+	 }
+	 .b1{
+	 	margin: 0 14px;
+	 }
+	 #bottom a{
+	 	color: white;
+	 }
+  </style>
+  <body>
+  	<div id="name1">
+  		<img src="imagewgh/big1.jpg">
+  	</div>
+  	<div id="header">
+  	   <a name="tp" id="top1"></a>
+  	   <div id="ad"><a href="#tp" target="_self" id="top2">返回顶部</a></div>
+  	   <div class="head">
+	  	<div class="search-left">
+			<ul>
+				<li><img src="imagewgh/312.png" alt="logo"></li>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">国创</a></li>
+				<li><a href="#">治愈</a></li>
+				<li><a href="#">探险</a></li>
+				<li><a href="#">搞笑</a></li>
+				<li><a href="#">少儿</a></li>
+				<li><a href="#">全部</a></li>
+		
+			</ul>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" name="search" value="">
+				<button><img src="imagewgh/search.jpg"></button>
+			</form>
+		</div>
+		<div class="search-right">
+				<ul>
+				<li><a href="#">注册</a></li>
+				<li style="width:10px;height:50px;">/</li>
+				<li><a href="#">登陆</a></li>
+				<li><img src="imagewgh/load.jpg"></li>
+				</ul>
+		</div>
+	   </div>	
+   		<div id="act">
+           <p id="sp">天坑鹰猎真的巨好看呀☺</p>
+  	    </div>
+  	    <div id="act1">
+  	    	<p>一定要看呀☀</p>
+  	    </div>
+  	    <div id="act2">
+  	    	<p>超级棒㊣</p>
+  	    </div>
+  	    <div id="act9">
+  	    	<p>故事很吸引人❁</p>
+  	    </div>
+  	</div>
+  	<div id="nav">
+         <h2>小简介</h2>
+         <p>《天坑鹰猎》是由成志超执导，王俊凯、文淇领衔主演，蒋依依特别主演，叶筱玮、郑好、刘佩琦、马跃、李小燕、张耀宇、陈叶生、王玥兮等联袂主演，吴越、郑凯特约出演的自然题材励志剧。该剧改编自天下霸唱同名小说，讲述了20世纪80年代末，北京少年张保庆为给恩师寻药，只身前往东北鹰屯，却因偶得一张古老的地图，与地质少年团开启了共同探秘天坑的故事.</p>
+         <a href="https://baike.baidu.com/item/%E5%A4%A9%E5%9D%91%E9%B9%B0%E7%8C%8E/22105909?fr=aladdin#4" target="_self">了解geng多点我o^o</a>
+  	</div>
+  	<div id="jieshao">
+  		<h2>角色介绍</h2>
+  		<ul>
+  			<li>
+  				<img src="imagewgh/zbq.jpg">
+  				<span id="p1">张保庆</span>
+  				<span id="p2">演员 王俊凯</span>
+  				<p>北京少年张保庆，为给恩师寻药，只身前往东北鹰屯，却因偶得一张古老的地图，与地质少年团开启了共同探秘天坑的故事。探险途中，少年不惧危险，勇挫贪婪势力，深刻领悟到人类的过度贪婪终将破坏大自然的平衡，逐渐从懵懂的毛头小子成长为有责任感的英雄少年。</p>
+  			</li>
+  			<li>
+  				<img src="imagewgh/cg.jpg">
+  				<span id="p3">菜瓜</span>
+  				<span id="p4">演员 文淇</span>
+  				<p>菜瓜是个不畏世俗眼光、执着追求理想的的长白鹰屯少女。一直以来，菜瓜对自己严格要求，努力成为第一猎手。她对天坑抱有的执念，都源于菜瓜不能坦然接受父母的离开。当奶奶把事情真相告诉菜瓜时，多年的信念倒塌，一时之间无处依靠，好在菜瓜足够成熟接受一切，选择从回忆中走出来，珍惜眼前的亲人才最重要。</p>
+  			</li>
+  			<li>
+  				<img src="imagewgh/xhg.jpg">
+  				<span id="p1">小红果</span>
+  				<span id="p2">演员 蒋依依</span>
+  				<p>小红果是20岁的中国地质大学学生，也是队里年龄最小的实习生，负责后勤和资料整理等工作。温柔有礼的她可谓雪域红颜，复杂身世引人同情；这个从农村里走出来的第一个女大学生，更暗喻着独立女性坚定追求理想的观念。</p>
+  			</li>
+  			<li>
+  				<img src="imagewgh/dz.jpg">
+  				<span id="p1">队长</span>
+  				<span id="p5">演员 叶筱伟</span>
+  				<p>杨烨，23岁，中国地质科学研究院有史以来最年轻的勘探队队长。虽然杨烨年纪轻轻，但身上有着雷厉风行的“老干部”作风。</p>
+  			</li>
+  			<li>
+  				<img src="imagewgh/ebz.jpg">
+  				<span id="p1">二鼻子</span>
+  				<span id="p2">演员 郑好</span>
+  				<p>二鼻子，16岁，菜瓜的弟弟。二鼻子顶着他远近闻名的“鹰屯第一少年猎手”名号，与姐姐菜瓜撞上北京小爷张保庆，三人随即成为欢喜冤家。然而却因为一次意外一同坠落谷底，三人开启了他们的冒险之旅。</p>
+  			</li>
+  			<li>
+  				<img src="imagewgh/sjy.jpg">
+  				<span id="p1">老洞狗子</span>
+  				<span id="p6">演员 刘佩琦</span>
+  				<p>老洞狗子是张保庆的四舅爷，表面和蔼慈善，但实际上是个沉默寡言、阴狠狡诈的人，还是个道上鼎鼎大名的“倒爷”。老洞狗子行事讲究斩草除根，那个黑眼罩之下的独眼让人恐惧。</p>
+  			</li>
+  		</ul>
+  	</div>
+  	<div id="juzhao">
+  		 <div id="pp">
+  		 	<h2>来欣赏一下剧照吧₪</h2>
+  		 	<a href="https://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=result&fr=&sf=1&fmq=1577022659818_R&pv=&ic=&nc=1&z=&hd=&latest=&copyright=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&ctd=1577022659819%5E00_1519X762&sid=&word=%E5%A4%A9%E5%9D%91%E9%B9%B0%E7%8C%8E%E5%89%A7%E7%85%A7">⊱点它欣赏更多☺</a>
+  		 </div>
+  		 <div class="slider" id="slider">
+  		 	<div class="slide"><img src="imagewgh/5.jpg"></div>
+  		 	<div class="slide"><img src="imagewgh/1.jpg"></div>
+  		 	<div class="slide"><img src="imagewgh/2.jpg"></div>
+  		 	<div class="slide"><img src="imagewgh/3.jpg"></div>
+  		 	<div class="slide"><img src="imagewgh/4.jpg"></div>
+  		 	<div class="slide"><img src="imagewgh/5.jpg"></div>
+  		 	<div class="slide"><img src="imagewgh/1.jpg"></div>
+  		 </div>
+  	</div>
+  	<div id="button1">
+  	   <button >我想知道时间❧❧</button>
+  	</div>
+  	<div id="bottom">
+		<p class="bp2">
+			<a href="#">关于我们</a>
+			<span class="b1">|</span>
+			<a href="#">版权声明</a>
+			<span class="b1">|</span>
+			<a href="#">VIP服务</a>
+			<span class="b1">|</span>
+			<a href="#">QQ群部落</a>
+			<span class="b1">|</span>
+			<a href="#">安利影片</a>
+			<span class="b1">|</span>
+			<a href="#">合作意向</a>
+			<span class="b1">|</span>
+			<a href="#">意见反馈</a>
+			<span class="b1">|</span>
+			<a href="#">联系我们</a></p>
+		<p class="bp2"> 2019-2020 312有限公司 版权所有</p>
+	</div>
+  	<script type="text/javascript">
+  		var name1=document.getElementById('name1');
+  		var header=document.getElementById('header');
+  		var nav=document.getElementById('nav');
+  		var jieshao=document.getElementById('jieshao');
+  		var juzhao=document.getElementById('juzhao');
+  		var button1=document.getElementById('button1');
+  		var bottom=document.getElementById('bottom');
+  		name1.onclick=function(){
+			name1.style.display='none';
+	        header.style.display='block';
+	        nav.style.display='block';
+	        jieshao.style.display='block';
+	        juzhao.style.display='block';
+	        button1.style.display='block';
+	        bottom.style.display='block';
+  		}
+  		var act=document.getElementById('act');
+  		var nav=document.getElementById('nav');
+		function getStyle(obj,style) {  
+		    if(obj.currentStyle) 
+		    {  
+		         return obj.currentStyle[style];  
+		    } 
+		    else 
+		    {  
+		         return getComputedStyle(obj)[style];  
+		   }  
+		} 
+		function color(){
+			var rgb='rgb('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+')';
+            return rgb;
+		}
+		var act1=document.getElementById("act1");
+		var act2=document.getElementById('act2');
+  		window.onload=function movebottom(){
+		    var timer=setInterval(function(){
+		    var now=parseInt(getStyle(act,'top'));
+		    var speed1=2;
+		    if(now==500){
+		    	 act.style.top=20+'px';
+		    }
+		    else{
+		        act.style.top=now+speed1+'px';
+		    }
+		   },100);
+		   var time=setInterval(function(){
+		   var nower=parseInt(getStyle(act1,'top'));
+		   var speed2=2;
+		    if(nower==500){
+		    	 act1.style.top=20+'px';
+		    }
+		    else{
+		        act1.style.top=nower+speed2+'px';
+		    }
+		   },100);
+		   var time1=setInterval(function(){
+		   var nower1=parseInt(getStyle(act2,'top'));
+		   var speed=10;
+		    if(nower1==1400){
+		    	 act2.style.top=20+'px';
+		    }
+		    else{
+		        act2.style.top=nower1+speed+'px';
+		    }
+		   },100);
+		   var time9=setInterval(function(){
+		   var nower9=parseInt(getStyle(act9,'top'));
+		   var speed3=10;
+		    if(nower9==1400){
+		    	 act9.style.top=20+'px';
+		    }
+		    else{
+		        act9.style.top=nower9+speed3+'px';
+		    }
+		   },100);
+           nav.onclick=function(){
+             	nav.style.backgroundColor=color();
+           };
+            function animate(obj,json,callback){
+				clearInterval(obj.timer);
+				obj.timer = setInterval(function(){
+					var isStop = true;
+					for(var attr in json){
+						var now = 0;
+						if(attr == 'opacity'){
+							now = parseInt(getStyle(obj,attr)*100);
+						}else{
+							now = parseInt(getStyle(obj,attr));
+						}
+						var speed = (json[attr] - now) / 8;
+						speed = speed>0?Math.ceil(speed):Math.floor(speed);
+						var cur = now + speed;
+						if(attr == 'opacity'){
+							obj.style[attr] = cur / 100;
+						}else{
+							obj.style[attr] = cur + 'px';
+						}
+						if(json[attr] !== cur){
+							isStop = false;
+						}
+					}
+					if(isStop){
+						clearInterval(obj.timer);
+						callback&&callback();
+					}
+				}, 30)
+			}
+			var slider=document.getElementById('slider');
+			var index=1;
+			var timer=1;
+			var isMoving=false;
+			function next(){
+				if(isMoving){
+					return;
+				}
+				isMoving=true;
+				index++;
+				animate(slider,{left:-1200*index},function(){
+					if(index==6){
+						slider.style.left='-1200px';
+						index=1;
+					}
+					isMoving=false;
+				});
+			}
+			timer=setInterval(next,3000);
+            button1.onclick=function(){var now=new Date();
+            alert('现在是'+now.toLocaleString());}
+           
+		 }
+  	</script>
+  </body>
+</html>
